@@ -1,0 +1,301 @@
+@import url('fonts/fonts.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root {
+
+    /* Theme Fonts */
+
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+
+    /* Theme Colours */
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* Gradient Colours */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+/* Global Classes */
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul {
+    list-style-type: none;
+}
+h1 {
+    font-family: var(--Lexend);
+    font-size: 3rem;
+}
+h2 {
+    font-family: var(--Lexend);
+}
+h3 {
+    font-family: var(--Abel);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: var(--Livvic);
+}
+span {
+    font-family: var(--Abel);
+}
+.container {
+    margin: 0 2vw;
+}
+.text-gray {
+    color: var(--text-gray);
+}
+.bxs-user-circle {
+    color: var(--text-gray);
+}
+.bx-calendar {
+    color: var(--text-gray);
+}
+.post-info span {
+    color: var(--text-gray);
+}
+p {
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+.nav {
+    background: var(--midnight);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+.nav .nav-menu {
+    justify-content: space-between;
+}
+.nav .nav-menu a {
+    color:white;
+}
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--white);
+}
+.collapse {
+    height: 30rem;
+}
+.nav .nav-items {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    font-family: var(--Abel);
+}
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+.nav .nav-items .nav-link:hover {
+    background-color: var(--white);
+
+}
+.nav .nav-items .nav-link:hover a{
+    color: var(--midnight);
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    font-family: var(--Lexend);
+}
+.nav .social {
+    padding: 1.4rem 0;
+}
+.nav .social i{
+    padding: 0.2rem;
+}
+.nav .social i:hover {
+    color: #a1c4cf;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YnVzaW5lc3N8ZW58MHx8MHx8&w=1000&q=80) no-repeat;
+    background-size: cover;
+}
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p{
+  text-align: justify;
+  color: white;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #b9b9b9;
+}
+footer.footer {
+  height: 100%;
+  background: var(--bg-color);
+  position: relative;
+}
+footer.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer.footer .container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem 0.9rem;
+}
+footer.footer .container h2 {
+  color: white;
+}
+footer.footer .about-me p {
+  padding-top: 0.5rem;
+}
+footer.footer .newsletter .form-element {
+  padding-top: 0.5rem;
+  background: var(--bg-color);
+  display: inline-block;
+}
+footer.footer .newsletter .form-element input {
+  padding: 0.5rem 0.7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: var(--Josefin);
+  font-size: 1rem;
+  width: 74%;
+}
+footer.footer .newsletter p {
+  padding-top: 0.5rem;
+}
+footer.footer .newsletter p a {
+  color: white;
+}
+footer.footer .newsletter .form-element ::placeholder {
+  color: #a1c4cf;
+}
+footer.footer .newsletter .form-element span {
+  background: var(--sky);
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+}
+footer.footer .instagram div > img {
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin: 0.3rem 0.4rem;
+}
+footer.footer .follow p {
+  padding-top: 0.5rem;
+}
+footer.footer .follow .follow-socials {
+  padding-top: 0.5rem;
+}
+footer.footer .follow .follow-socials i {
+  color: white;
+  padding: 0.5rem;
+}
+footer.footer .follow .follow-socials i:hover {
+  color: #a1c4cf;
+}
+footer.footer .rights {
+  justify-content: center;
+  font-family: var(--Josefin);
+}
+footer.footer .rights h4 a {
+  color: white;
+}
+footer.footer .move-up {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+footer.footer .move-up span {
+  color: #a1c4cf;
+  width: 200%;
+  height: 200%;
+}
+footer.footer .move-up span:hover {
+  color: white;
+  cursor: pointer;
+}

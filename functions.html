@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=google">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Blog</title>
+
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="presentations.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="all.css">
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="aos.css">
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="index.html" class="text-gray">Blog</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+            <div class="div">
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="index.html">Topics</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="index.html">About Me</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="index.html">All Blogs</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="mailto:703560@pdsb.net" target="_blank" rel="noopener noreferrer"><i class='bx bxl-gmail'></i></a>
+                <a href="https://www.instagram.com/northpark.ibt/?hl=en" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.youtube.com/user/PeelSchools" target="_blank" rel="noopener noreferrer"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook-circle'></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Site -->
+    <main>
+
+        <!-- Image -->
+        <div class="box">
+            <img src="functions.jpg" alt="" class="box-img">
+
+            <!-- Functions -->
+            <h1>Functions!</h1><br>
+            <h5>“Of course, bad code can be cleaned up. But it’s very expensive.”<i><b><br>- Robert C. Martin</h5></i></b>
+
+            <!-- Details -->
+            <br><br><p><b><center>What are Functions?<br><br>
+                Functions allow you to store a piece of code that does a single task inside a defined block, and then call that code whenever you need it using a single short command.<br><br>
+                A function is a reusable block of code that groups together a sequence of statements to perform a specific task.<br><br><br>
+
+                Functions Declarations<br><br>
+                <ul>
+                    <li>● In JavaScript, there are many ways to create a function. One way to create a function is by using a function declaration</li>
+                    <li>● A function declaration is a function that is bound to an
+                        identifier, or name.</li>
+                    <li>● A function declaration consists of:
+                    </li>
+                    <ul>
+                        <li>● The function keyword.
+                        </li>
+                        <li>● The name of the function, or its identifier, followed by
+                            parentheses.
+                        </li>
+                        <li>● A function body, or the block of statements required
+                            to perform a specific task, enclosed in the function’s
+                            curly brackets, { }.</li>
+                    </ul>
+                </ul><br><br><br>
+
+                Calling a Function<br><br>
+                <ul>
+                    <li>● A function declaration binds a function to
+                        an identifier. However, a function
+                        declaration does not ask the code inside
+                        the function body to run, it just declares
+                        the existence of the function.</li>
+                    <li>● To call a function in your code you type
+                        the function name followed by
+                        parentheses. This function call executes
+                        the function body, or all of the statements
+                        between the curly braces. We can call the
+                        same function as many times we need.</li>
+                </ul><br><br><br>
+
+                Parameters & Arguments<br><br>
+                <ul>
+                    <li>● When declaring a function, we can specify its parameters.</li>
+                    <li>● Parameters allow functions to accept input(s) and perform a task using the input(s).</li>
+                    <li>● We use parameters as placeholders for information that will be passed to the function when it is called.</li>
+                </ul><br><br><br>
+
+                Default Perameters<br><br>
+                <ul>
+                    <li>● Default parameters allow parameters to have a
+                        predetermined value in case there is no argument
+                        passed into the function or if the argument is
+                        undefined when called.
+                        </li>
+                </ul><br><br><br>
+
+                Return<br><br>
+                <ul>
+                    <li>● When a function is called, the computer will run through the
+                        function’s code and evaluate the result of calling the
+                        function. By default that resulting value is undefined.</li>
+                    <li>● To pass back information from the function call, we use a
+                        return statement. To create a return statement, we use the
+                        return keyword followed by the value that we wish to return.</li>
+                    <li>● When a return statement is used in a function body, the
+                        execution of the function is stopped and the code that
+                        follows it will not be executed.</li>
+                    <li>● The return keyword is powerful because it allows functions
+                        to produce an output. We can then save the output to a
+                        variable for later use.</li>
+                </ul><br><br><br>
+
+                Helper Function<br><br>
+                <ul>
+                    <li>● These functions being called within another function are often referred to as helper functions.</li>
+                    <ul>
+                        <li>● It makes our code easier to read and
+                            debug if necessary.
+                            </li>
+                    </ul>
+                    <li>● Writing helper functions can help take
+                        large and difficult tasks and break them
+                        into smaller and more manageable
+                        tasks.</li>
+                </ul><br><br><br>
+
+                Function Expressions<br><br>
+                <ul>
+                    <li>● To define a function inside an expression, we can use the function keyword</li>
+                    <li>● A function expression is often stored in a variable in order to refer to it.</li>
+                </ul><br><br><br>
+
+                Arrow Functions<br><br>
+                <ul>
+                    <li>● Shorter way to write “Function” by using the
+                        special “fat arrow” <code>() =></code></li>
+                    <li>● Place <code>“=>”</code> after the brackets.</li>
+                </ul><br><br><br>
+
+                Concise Body Arrow Function<br><br>
+                <ul>
+                    <li>● JavaScript also provides several ways to
+                        refactor arrow function syntax.</li>
+                    <li>● Functions that take only a single
+                        parameter do not need that parameter to
+                        be enclosed in parentheses. (unless the
+                        function takes zero or multiple
+                        parameters)
+                        </li>
+                    <li>● A function body composed of a single-line
+                        block does not need curly braces.
+                        Without the curly braces, whatever that
+                        line evaluates will be automatically
+                        returned. The contents of the block
+                        should immediately follow the arrow =>
+                        and the return keyword can be removed.
+                        This is referred to as implicit return.
+                        </li>
+                </ul><br><br><br>
+            </center></p></b>
+
+            <!-- Socials -->
+            <ul>
+                <li><a href="mailto:703560@pdsb.net" target="_blank" rel="noopener noreferrer"><i class='bx bxl-gmail'></i></a></li>
+                <li><a href="https://www.instagram.com/northpark.ibt/?hl=en" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="https://www.youtube.com/user/PeelSchools" target="_blank" rel="noopener noreferrer"><i class='bx bxl-youtube' ></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook-circle'></i></a></li>
+            </ul>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="container">
+            <div class="about-me" data-aos="fade-right" data-aos-delay="200">
+                <h2>About Me</h2>
+                <p>I am a grade 11 student at North Park Secondary School who is dedicated and well-rounded with a passion for math, computer science and high level of education. This blog will reflect my thoughts and the topics that were covered in the given time period.</p>
+                <br>
+                <p>NOTE: The following blog is an assignment that will be updated weekly for a course called - Introduction to Computer Science.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200"  >
+                <h2>Contact</h2>
+                <p>Email me at <a href="mailto:703560@pdsb.net" target="_blank" rel="noopener noreferrer">703560@pdsb.net</a></p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><a href="mailto:703560@pdsb.net" target="_blank" rel="noopener noreferrer"><span><i class='bx bx-right-arrow-circle'></i></span></a>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="Screenshot_20220921-093541.png" alt="insta1">
+                    <img src="arjan.png" alt="insta2">
+                    <img src="imaan.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="mandem.png" alt="insta4">
+                    <img src="me and neil.png"insta5">
+                    <img src="neelesh ultrawide top face.png" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow Me</h2>
+                <p>Here are my Socials</p>
+                <div class="follow-socials">
+                    <a href="mailto:703560@pdsb.net" target="_blank" rel="noopener noreferrer"><i class='bx bxl-gmail'></i></a>
+                    <a href="https://www.instagram.com/northpark.ibt/?hl=en" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.youtube.com/user/PeelSchools" target="_blank" rel="noopener noreferrer"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright &copy; 2022 | All Rights Reserved | Made by
+                <a href="#about-info">Neelesh Sirdana</a>
+            </h4>
+        </div>
+        <br>
+        <div class="move-up">
+            <span><i class='bx bxs-up-arrow-circle fa-4x'></i></span>
+        </div>
+    </footer>
+
+    <!-- Custom Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- Jquery Library File -->
+    <script src="Jquery3.6.1.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="owl.carousel.min.js"></script>
+
+    <!-- AOS JS Library-->
+    <script src="aos.js"></script>
+
+    <!-- Custom JavaScript File -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
